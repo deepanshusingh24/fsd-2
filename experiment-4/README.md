@@ -1,16 +1,9 @@
-# React + Vite
+# Implement state management using Redux / Context API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Learning Outcomes
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Understand State Management Concepts**: Learn the difference between local component state and global application state, and when to use each approach.
+2. **Implement Context API**: Gain hands-on experience creating and using React Context API for sharing state across multiple components without prop drilling.
+3. **Set Up Redux Store**: Learn how to configure a Redux store, create reducers, and connect React components to the Redux state using Provider.
+4. **Use Redux Hooks**: Master the use of useSelector and useDispatch hooks to read from and update the Redux store in functional components.
+5. **Compare State Management Solutions**: Understand the trade-offs between Context API and Redux, and choose the appropriate tool based on application complexity and requirements.

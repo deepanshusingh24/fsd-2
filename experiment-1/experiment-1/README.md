@@ -2,20 +2,20 @@
 
 ## Learning Outcomes
 
-1. **Understanding Single Page Application (SPA) Architecture**
-   - Learn how SPAs dynamically load content without full page reloads using React Router, improving user experience and application responsiveness.
+1. **Implementing Routing in SPA**
+   - Master the implementation of client-side routing to create seamless navigation between different views and pages without server requests.
 
-2. **Client-Side Routing Implementation**
-   - Master the implementation of client-side routing using React Router DOM to create seamless navigation between different views/pages without server requests.
+2. **Component-Based Development**
+   - Develop skills in building reusable, modular React components and understanding component composition for maintainable applications.
 
-3. **Component-Based Development**
-   - Develop skills in building reusable, modular React components (Home, About, Contact) and understanding component composition for maintainable applications.
+3. **State Management and Route Parameters**
+   - Learn to manage application state effectively within a SPA and handle route parameters for dynamic content rendering across different components.
 
-4. **Performance and User Experience Benefits of SPAs**
+4. **Performance and User Experience Benefits**
    - Understand how SPAs reduce network traffic, provide faster navigation, and deliver a smoother user experience compared to traditional Multi-Page Applications (MPAs).
 
-5. **State Management and Route Parameters**
-   - Learn to manage application state effectively within a SPA and handle route parameters for dynamic content rendering across different components.
+5. **Understanding SPA Architecture**
+   - Learn how SPAs dynamically load content without full page reloads, improving user experience and application responsiveness.
 
 ## Project Overview
 
