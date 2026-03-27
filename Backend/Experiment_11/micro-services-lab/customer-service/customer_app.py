@@ -1,7 +1,11 @@
 from flask import Flask, jsonify
 import requests
+import os
 
 app = Flask(__name__)
+
+# Get Order Service URL from environment variable or use local default
+ORDER_SERVICE_URL = os.getenv('ORDER_SERVICE_URL', 'http://localhost:5002')
 
 customers = {
     101: {"id": 101, "name": "Customer-1", "email": "customer-1@example.com"},
@@ -19,7 +23,7 @@ def get_account_details(user_id):
     # Call Order Service
     try:
         response = requests.get(
-            f"http://localhost:5002/orders/user/{user_id}",
+            f"{ORDER_SERVICE_URL}/orders/user/{user_id}",
             timeout=3
         )
 
@@ -44,4 +48,5 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(port=5001, debug=True)
+    port = int(os.getenv('PORT', 5001))
+    app.run(host='0.0.0.0', port=port, debug=False)

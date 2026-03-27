@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: customer-service
+    runtime: python
+    rootDir: /Backend/Experiment_11/micro-services-lab/customer-service
+    buildCommand: pip install -r requirements.txt
+    startCommand: python customer_app.py
+    envVars:
+      - key: ORDER_SERVICE_URL
+        value: https://order-service.onrender.com
+      - key: FLASK_ENV
+        value: production
+      - key: PORT
+        value: 8080
+
+  - type: web
+    name: order-service
+    runtime: python
+    rootDir: /Backend/Experiment_11/micro-services-lab/order-service
+    buildCommand: pip install -r requirements.txt
+    startCommand: python order_app.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: PORT
+        value: 8080
